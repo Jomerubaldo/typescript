@@ -70,3 +70,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
+
+// to run this goto terminal and select git bash then type npm start
