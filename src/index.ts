@@ -6,17 +6,33 @@ let isStudent: boolean;
 
 let subjects: string[];
 
-let position: [number, string];
+let printName: (name: string) => void;
 
-position = [12, "Jomer"];
+let userName: unknown;
 
-type Student = {
+type Y = {
+  a: number;
+  b: string;
+};
+type Z = {
+  c: number;
+  d: string;
+};
+
+interface Student {
   name: string;
-  age?: number;
-};
+  age: number;
+}
 
-let student1: Student = {
-  name: "Jomer",
-};
+interface HS extends Student {
+  position: string;
+}
 
-let lotsOfStudents: string;
+
+const App: React.FC() {
+  return(
+    <div className="App">
+    Mabuhay Mundo!
+    </div>
+  )
+}
